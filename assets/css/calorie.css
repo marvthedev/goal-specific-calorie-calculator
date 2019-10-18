@@ -1,0 +1,173 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background: #232A34;
+    width: 100%
+}
+
+h1,
+h2  {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Styles for smaller screens BEGIN */
+@media only screen and (max-width: 600px) {
+    h1 {
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+}
+
+h2 {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.input-box,
+.results-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    border: 0.5px solid #E6E6E6;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.input-box {
+    padding: 0 0 20px 0;
+}
+
+
+.gender-box,
+.weight-box,
+.age-box,
+#height-select,
+#weight-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.height-box,
+.activity-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.height-box,
+.weight-box,
+.activity-box {
+    flex-direction: column;
+}
+
+.activity-box {
+    margin-top: 30px;
+}
+
+.activity-box h2 {
+    margin-bottom: 10px;
+}
+
+/* Style input boxes */
+.height-input input,
+.weight-input input,
+#age-input,
+#goal-input {
+    width: 50px;
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+#height-select {
+    margin-bottom: 10px;
+}
+
+.gender-box label,
+.height-box label,
+.weight-box label {
+    padding: 0 5px;
+}
+
+#cm-label,
+#lbs-label {
+    display: none;
+}
+
+.goal-box {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* BUTTONS */
+.calc-btn {
+    padding: 20px 20px;
+    color: white;
+    background: #232A34;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/* ################# RESULTS ################# */
+.results-box {
+    background: #F6F6F6;
+}
+
+.results-box h2 {
+    font-size: 1.5rem;
+}
+
+.results-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.results-box input {
+    margin: 0 5px;
+}
+
+#bmr-input,
+#tdee-input {
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.tdee-result,
+.goal-result {
+    margin-top: 20px;
+    text-align: center;
+}
